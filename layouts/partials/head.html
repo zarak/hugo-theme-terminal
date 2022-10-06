@@ -75,3 +75,6 @@
 <!-- Extended head section-->
 {{ partial "extended_head.html" . }}
 
+{{ with .Params.mathjax }}
+    {{ partial "mathjax.html" }}
+{{ end }}
